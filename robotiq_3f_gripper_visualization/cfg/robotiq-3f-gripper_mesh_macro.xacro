@@ -1,4 +1,4 @@
-<robot xmlns:xacro="http://ros.org/wiki/xacro">
+<robot xmlns:xacro="http://wiki.ros.org/xacro">
         <xacro:macro name="robotiq-3f-gripper_mesh" params="prefix">
 		<!-- link list -->
 		<link name="${prefix}palm">

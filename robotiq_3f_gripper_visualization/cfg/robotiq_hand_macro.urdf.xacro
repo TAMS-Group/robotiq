@@ -6,7 +6,7 @@ Creates an articulated robotiq-3f-gripper hand with the passed in prefix.  If th
 is only one hand in the urdf then an empty prefix can be used "".  If
 there are multiple hands then a prefix followed by an "_" is needed.
 -->
-<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="robotiq_hand">
+<robot xmlns:xacro="http://wiki.ros.org/xacro" name="robotiq_hand">
 
   <xacro:macro name="robotiq_finger" params="prefix">
     <!-- Link list -->

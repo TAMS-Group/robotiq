@@ -7,7 +7,7 @@
     Please note that the base link of the 2f gripper is
     "${prefix}robotiq_85_adapter_link"
  -->
-<robot name="robotiq_c2_model" xmlns:xacro="http://ros.org/wiki/xacro">
+<robot name="robotiq_c2_model" xmlns:xacro="http://wiki.ros.org/xacro">
   <link name="robotiq_85_adapter_link">
     <visual>
       <geometry>

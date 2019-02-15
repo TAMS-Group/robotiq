@@ -9,7 +9,7 @@
 -->
 
 
-<robot xmlns:xacro="http://ros.org/wiki/xacro">
+<robot xmlns:xacro="http://wiki.ros.org/xacro">
   <xacro:macro name="robotiq_c2_model" params="prefix">
 
   <link name="${prefix}robotiq_85_adapter_link">
