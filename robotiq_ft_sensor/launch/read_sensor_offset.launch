@@ -1,0 +1,6 @@
+<launch>
+  <node pkg="robotiq_ft_sensor" type="rq_sensor" name="rq_sensor" output="screen" required="true">
+    <param name="ftdi_id" type="string" value="ttyUSB0" />
+  </node>
+  <node pkg="robotiq_ft_sensor" type="call_set_zero_service.py" name="set_zero_service_call" output="screen"/>
+</launch>

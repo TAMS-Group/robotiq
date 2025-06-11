@@ -1,0 +1,5 @@
+<launch>
+    <node pkg="robotiq_ft_sensor" type="rq_sensor" name="rq_sensor" output="screen">
+        <param name="ftdi_id" type="string" value="ttyUSB0" />
+    </node>
+</launch>

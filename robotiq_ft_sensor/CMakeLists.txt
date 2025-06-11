@@ -39,7 +39,7 @@ include_directories(
 add_executable(rq_sensor nodes/rq_sensor.cpp src/rq_sensor_com.cpp src/rq_sensor_state.cpp)
 add_dependencies(rq_sensor ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 target_link_libraries(rq_sensor ${catkin_LIBRARIES})
-
+ 
 add_executable(rq_test_sensor nodes/rq_test_sensor.cpp)
 add_dependencies(rq_test_sensor ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 target_link_libraries(rq_test_sensor ${catkin_LIBRARIES})
@@ -55,3 +55,6 @@ install(DIRECTORY urdf
 install(DIRECTORY meshes
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
 )
+
+catkin_install_python(PROGRAMS scripts/call_set_zero_service.py
+  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
